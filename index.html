@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feedback.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <header> 
+        <span><h1 class="heading">Your Thoughts Matter</h1></span>
+    </header>
+    <div id="container">
+        <div id="input_container">
+            <h1 id="input_heading">Feedback</h1> 
+            <div id="input_fields">
+                <ul>
+                    <li class="inputbox">
+                        
+                        <input id='fname' placeholder="First Name" type="text" name="fname">
+                    </li>
+                    <li class="inputbox">
+                        
+                        <input type="text" placeholder="Middle Name" name="mname" id="mname">
+                    </li>
+                    <li class="inputbox">
+                        
+                        <input type="text" placeholder="Last Name" name="lname" id="lname">
+                    </li>
+                    <li class="inputbox">
+                        <h3>Suggestion</h3>
+                        <textarea name="feedback_input" id="feedback_input"></textarea>
+                    </li>
+                    <li class="inputbox">
+                        <div class="radio_button_container">
+                            <h3>Gender</h3>
+                            <p>Male</p>
+                            <div class="abc">
+                                <input class="gender" type="radio" name="gender" value="male">
+                                <div class="a"></div>
+                            </div>
+                            <p>Female</p>
+                            <div class="abc">
+                                <input class="gender" type="radio" name="gender" value="female">
+                                <div class="a"></div>
+                            </div>
+                               
+                        </div> 
+                    </li>
+                    <li style="padding: 10px;" class="inputbox">
+                        <button id="add_btn">Submit</button>
+                        <button id="clear_btn">Reset</button>
+                        <div id="input_check_popup">
+                            <button id="close_popup">X</button>
+                            <h1 style="color: red; text-align: center;"> 
+                                mandatory inputs  
+                            </h1>
+                            <ul style="text-align: center; font-size: 1.5rem;">
+                                <li>First name</li>
+                                <li>last name</li>
+                                <li>feedback</li>
+                                <li>Gender</li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="list_container">
+            <h1 id="list_heading">Suggestions</h1>
+            <div id="list_box_container">
+               
+            </div>
+        </div>
+    </div>
+<script src="feedback.js" type="text/javascript"></script>
+</body>
+<footer>
+<h1 class=heading>
+    Designed and developed by Yash Deep Yadav 
+</h1>
+</footer>
+</html>
